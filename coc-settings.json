@@ -1,0 +1,26 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "java",
+    "javascript",
+    "typescript",
+    "go",
+    "markdown",
+    "html",
+    "yaml",
+    "json",
+    "graphql",
+    "ruby",
+    "cpp",
+    "javascriptreact",
+    "python",
+    "php"
+  ],
+
+  // "phyton.linting.enabled": false,
+  "python.linting.pylintEnabled": true,
+  "codeLens.enable": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
+  "vetur.trace.server": "verbose"
+}
