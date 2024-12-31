@@ -16,8 +16,7 @@
     "python",
     "php"
   ],
-
-  // "phyton.linting.enabled": false,
+  "phyton.linting.enabled": false,
   "python.linting.pylintEnabled": true,
   "codeLens.enable": true,
   "java.referencesCodeLens.enabled": true,

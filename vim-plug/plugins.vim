@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'sheerun/vim-polyglot'
 	Plug 'scrooloose/NERDTree'
+  Plug 'jistr/vim-nerdtree-tabs'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'joshdick/onedark.vim'
 	Plug 'neoclide/coc.nvim', { 'branch': 'release' }
@@ -37,5 +38,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'voldikss/vim-floaterm'
 
   Plug 'ap/vim-css-color'
+
+  Plug 'vim-scripts/dbext.vim'
+
+  Plug 'tpope/vim-dadbod'
+
+  Plug 'kristijanhusak/vim-dadbod-ui'
+
+  Plug 'airblade/vim-gitgutter'
+  Plug 'duane9/nvim-rg'
+  Plug 'rking/ag.vim'
+  Plug 'unkiwii/vim-nerdtree-sync'
+  Plug 'kien/ctrlp.vim'
+  Plug 'diepm/vim-rest-console'
+  Plug 'kristijanhusak/vim-dadbod-ui'
+  Plug 'kassio/neoterm'
+  Plug 'sbdchd/neoformat'
 
 call plug#end()

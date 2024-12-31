@@ -34,9 +34,37 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
- 
+"set relativenumber
+
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 colorscheme codedark
  
 " You can't stop me
 cmap w!! w !sudo tee %
+
+let g:newtrw_keepdir=0
+
+let $FZF_DEFAULT_T_COMMAND = 'rg --files --hidden'
+
+" database
+let g:dbs = [
+\ { 'name': 'dev', 'url': 'postgres://postgres:postgres@localhost:5432/store' }
+\ ]
+
+let mapleader = ","
+nnoremap <leader>1 1gt
+let NERDTreeShowHidden=1
+
+"set wildignore=
+"set wildignore+=*/node_modules/*,*/.git/*
+
+" let g:ctrlp_custom_ignore = {
+"   \ 'dir': '\v[\/](\.git|dist)$'
+" }
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_by_filname=0
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+"let g:ctrlp_custom_ignore = {
+"  \ 'dir': 'target\|node_modules\|dist'
+"}
+

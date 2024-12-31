@@ -12,10 +12,10 @@
 "map <M-k> :resize +2<CR>
 "map <M-h> :vertical resize -2<CR>
 "map <M-l> :vertical resize +2<CR>
-noremap <silent> <S-j> :resize -2<CR>
-noremap <silent> <S-k> :resize +2<CR>
-noremap <silent> <S-h> :vertical resize +2<CR>
-noremap <silent> <S-l> :vertical resize -2<CR>
+"noremap <silent> <S-j> :resize -2<CR>
+"noremap <silent> <S-k> :resize +2<CR>
+"noremap <silent> <S-h> :vertical resize +2<CR>
+"noremap <silent> <S-l> :vertical resize -2<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 
 " I hate escape more than anything else
@@ -45,10 +45,20 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
+"nnoremap <C-l> <C-w>l
+" Moverse entre las pantallas (splits)
+nnoremap <C-h> <C-w>h  " Moverse a la ventana de la izquierda
+nnoremap <C-j> <C-w>j  " Moverse a la ventana de abajo
+nnoremap <C-k> <C-w>k  " Moverse a la ventana de arriba
+nnoremap <C-l> <C-w>l  " Moverse a la ventana de la derecha
+" Redimensionar ventanas con Ctrl + Alt + (h/j/k/l)
+nnoremap <A-h> :vertical resize +2<CR>   " Aumentar tamaño hacia la izquierda
+nnoremap <A-l> :vertical resize -2<CR>   " Reducir tamaño hacia la derecha
+nnoremap <A-j> :resize +2<CR>            " Aumentar tamaño hacia abajo
+nnoremap <A-k> :resize -2<CR>            " Reducir tamaño hacia arriba
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
@@ -82,3 +92,7 @@ nnoremap <leader>0 10gt
 " let g:lasttab = 1
 " nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
 " au TabLeave * let g:lasttab = tabpagenr()
+
+let g:nerdtree_sync_cursorline = 1
+let g:NERDTreeHighlightCursorline = 1
+let g:airline#extensions#tabline#enabled = 1
