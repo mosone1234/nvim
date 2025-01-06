@@ -55,6 +55,8 @@ let mapleader = ","
 nnoremap <leader>1 1gt
 let NERDTreeShowHidden=1
 
+set wildignore=*/node_modules/*,*/target/*,*/tmp/*
+
 "set wildignore=
 "set wildignore+=*/node_modules/*,*/.git/*
 
@@ -68,3 +70,6 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 "  \ 'dir': 'target\|node_modules\|dist'
 "}
 
+let g:ctrlp_show_hidden=1
+
+let g:NerdTreeUseSimpleIndicator=1

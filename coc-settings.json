@@ -21,5 +21,47 @@
   "codeLens.enable": true,
   "java.referencesCodeLens.enabled": true,
   "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
-  "vetur.trace.server": "verbose"
+  "vetur.trace.server": "verbose",
+  "languageserver": {
+    "vue": {
+      "command": "vls",
+      "args": [],
+      "filetypes": ["vue"],
+      "trace.server": "verbose",
+    },
+    "yaml": {
+      "command": "yaml-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["yaml", "yaml.ansible", "kubernetes", "helm", "yml"],
+      "trace.server": "verbose",
+      "initializationOptions": {
+        "yaml.schemas": {
+          "https://json.schemastore.org/kubernetes.json": "/k8s/*.yaml"
+        },
+        "yaml.format.enable": true,
+        "yaml.validate": true
+      }
+    },
+    "bash": {
+      "command": "/bin/bash", // Linux: La ruta de Bash suele ser /bin/bash o /usr/bin/bash O /usr/local/bin/bash para macOS si usas Homebrew  // or "/usr/bin/bash" based on your system
+      "args": ["-l"],
+      "filetypes": ["sh", "bash", "zsh"],
+      "initializationOptions": {}
+    }
+  },
+  "coc.preferences.formatOnSaveFiletypes": ["vue", "typescript", "javascript", "json"],
+  "coc.preferences.autoComplete": true,
+  "coc.preferences.formatOnSaveFiletypes": ["yaml", "dockerfile", "json"],
+  "docker.enableImageBuild": true,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "prettier.disableLanguages": ["vue"],
+  //"coc.preferences.formatOnSaveFiletypes": ["html", "css"],
+  "html.autoClosingTags": true,
+  "html.format.wrapLineLength": 120,
+  "css.validate": true,
+  "css.format": {
+    "indentSize": 2
+  }
 }

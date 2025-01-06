@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/onepercent/Documents/store/store-backend/src/main/java'
-let g:netrw_dirhist_2='/home/onepercent/Documents/store/store-backend/src/main/java/com'
-let g:netrw_dirhist_3='/home/onepercent/Documents/store/store-backend/src/main/java/com/hulk'
-let g:netrw_dirhist_4='/home/onepercent/Documents/store/store-backend/src/main/java/com/hulk/store'
-let g:netrw_dirhist_5='/home/onepercent/Documents/store/store-backend/src/main/java/com/hulk/store/service'

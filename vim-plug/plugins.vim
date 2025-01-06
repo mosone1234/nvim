@@ -28,10 +28,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'terryma/vim-multiple-cursors'
 
   Plug 'yggdroot/indentline'
-  Plug 'ryanoasis/vim-devicons'
-
-  Plug 'ryanoasis/vim-devicons'
+  Plug 'https://github.com/ryanoasis/vim-devicons'
   Plug 'mhinz/vim-startify'
+  Plug 'preservim/nerdtree'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -54,5 +53,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'kristijanhusak/vim-dadbod-ui'
   Plug 'kassio/neoterm'
   Plug 'sbdchd/neoformat'
+  Plug 'xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
